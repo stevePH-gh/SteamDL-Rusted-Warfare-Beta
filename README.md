@@ -7,14 +7,15 @@ I do not plan to add more games that this downloader would support.
 
 ## Changelogs:
 ### **v2.0** - Beta Update
+- Added support for older systems
+- Support for .NET 4.4 and above
 - Improved visuals
 - Improved UI
 - Fixed: repeating download bug
 - Fixed: null file downloaded
 
-## **Installation:**
+## Initial Setup:
 This program needs SteamCMD to work.  
-
 
 **1**. Download steamcmd.zip  
 **2**. Create a "steamcmd" folder on your desktop  
@@ -22,7 +23,7 @@ This program needs SteamCMD to work.
 **4**. Place "steamcmd.exe" inside "steamcmd" folder.  
 **5**. Download mod files...
 
-## Feedback
+## Feedback:
 If you have issues or problems with the program, feel free to send your feedback!
 
 Facebook Page: [steveph official](https://web.facebook.com/profile.php?id=100086211795375)  
