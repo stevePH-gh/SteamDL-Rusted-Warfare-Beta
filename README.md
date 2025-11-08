@@ -31,6 +31,6 @@ Reddit: [u/steveph_yt_unreal](https://www.reddit.com/user/steveph_yt_unreal/?utm
 **QR Code:**  
 ![reddit qr](https://i.ibb.co/B5bnK5dt/chrome-qrcode-1762561024099.png)
 ### **Download:**
-Click this 👇👇:  
+Click this 👇👇  
 [Download Here](https://github.com/stevePH-gh/SteamDL-Rusted-Warfare-Beta/releases/tag/v2.0)  
 Or go to **Releases**
