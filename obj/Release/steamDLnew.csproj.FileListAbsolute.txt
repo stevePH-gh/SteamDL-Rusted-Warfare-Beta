@@ -9,4 +9,8 @@ C:\Users\User\source\repos\steamDLnew\steamDLnew\obj\Release\steamDLnew.csproj.G
 C:\Users\User\source\repos\steamDLnew\steamDLnew\obj\Release\steamDLnew.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\steamDLnew\steamDLnew\obj\Release\steamDLnew.exe
 C:\Users\User\source\repos\steamDLnew\steamDLnew\obj\Release\steamDLnew.pdb
-C:\Users\User\source\repos\steamDLnew\steamDLnew\obj\Release\steamDLnew.exe.config
+C:\Users\User\source\repos\steamDLnew\steamDLnew\bin\Release\steamDLnew.exe.manifest
+C:\Users\User\source\repos\steamDLnew\steamDLnew\bin\Release\steamDLnew.application
+C:\Users\User\source\repos\steamDLnew\steamDLnew\obj\Release\steamDLnew.TrustInfo.xml
+C:\Users\User\source\repos\steamDLnew\steamDLnew\obj\Release\steamDLnew.exe.manifest
+C:\Users\User\source\repos\steamDLnew\steamDLnew\obj\Release\steamDLnew.application
