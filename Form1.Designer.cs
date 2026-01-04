@@ -41,6 +41,11 @@
             this.labelStatus = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.ico = new System.Windows.Forms.PictureBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblAuhtor = new System.Windows.Forms.Label();
+            this.authorBox = new System.Windows.Forms.TextBox();
+            this.nameBox = new System.Windows.Forms.TextBox();
+            this.lblNotice = new System.Windows.Forms.Label();
             this.panelBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ico)).BeginInit();
             this.SuspendLayout();
@@ -82,7 +87,7 @@
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(279, 30);
             this.title.TabIndex = 2;
-            this.title.Text = "SteamDL Rusted Warfare 2.0";
+            this.title.Text = "SteamDL Rusted Warfare 2.1";
             // 
             // btnMin
             // 
@@ -128,7 +133,7 @@
             this.listBoxDetails.ForeColor = System.Drawing.Color.White;
             this.listBoxDetails.FormattingEnabled = true;
             this.listBoxDetails.ItemHeight = 22;
-            this.listBoxDetails.Location = new System.Drawing.Point(12, 148);
+            this.listBoxDetails.Location = new System.Drawing.Point(12, 225);
             this.listBoxDetails.Name = "listBoxDetails";
             this.listBoxDetails.Size = new System.Drawing.Size(659, 90);
             this.listBoxDetails.TabIndex = 5;
@@ -138,7 +143,7 @@
             this.lblDebug.AutoSize = true;
             this.lblDebug.Font = new System.Drawing.Font("Ebrima", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDebug.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblDebug.Location = new System.Drawing.Point(12, 120);
+            this.lblDebug.Location = new System.Drawing.Point(12, 197);
             this.lblDebug.Name = "lblDebug";
             this.lblDebug.Size = new System.Drawing.Size(70, 25);
             this.lblDebug.TabIndex = 4;
@@ -149,7 +154,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Green;
-            this.button1.Location = new System.Drawing.Point(12, 244);
+            this.button1.Location = new System.Drawing.Point(12, 321);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 48);
             this.button1.TabIndex = 6;
@@ -162,7 +167,7 @@
             this.labelStatus.AutoSize = true;
             this.labelStatus.Font = new System.Drawing.Font("Ebrima", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStatus.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelStatus.Location = new System.Drawing.Point(176, 244);
+            this.labelStatus.Location = new System.Drawing.Point(176, 321);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(65, 25);
             this.labelStatus.TabIndex = 4;
@@ -171,7 +176,7 @@
             // progressBar1
             // 
             this.progressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.progressBar1.Location = new System.Drawing.Point(181, 272);
+            this.progressBar1.Location = new System.Drawing.Point(181, 349);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(490, 15);
             this.progressBar1.TabIndex = 7;
@@ -186,19 +191,81 @@
             this.ico.TabIndex = 2;
             this.ico.TabStop = false;
             // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Ebrima", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblName.Location = new System.Drawing.Point(12, 120);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(63, 25);
+            this.lblName.TabIndex = 4;
+            this.lblName.Text = "Name:";
+            // 
+            // lblAuhtor
+            // 
+            this.lblAuhtor.AutoSize = true;
+            this.lblAuhtor.Font = new System.Drawing.Font("Ebrima", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAuhtor.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblAuhtor.Location = new System.Drawing.Point(12, 150);
+            this.lblAuhtor.Name = "lblAuhtor";
+            this.lblAuhtor.Size = new System.Drawing.Size(86, 25);
+            this.lblAuhtor.TabIndex = 4;
+            this.lblAuhtor.Text = "Author/s:";
+            // 
+            // authorBox
+            // 
+            this.authorBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.authorBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.authorBox.Enabled = false;
+            this.authorBox.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.authorBox.ForeColor = System.Drawing.Color.White;
+            this.authorBox.Location = new System.Drawing.Point(104, 150);
+            this.authorBox.Name = "authorBox";
+            this.authorBox.Size = new System.Drawing.Size(567, 29);
+            this.authorBox.TabIndex = 3;
+            // 
+            // nameBox
+            // 
+            this.nameBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.nameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nameBox.Enabled = false;
+            this.nameBox.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameBox.ForeColor = System.Drawing.Color.White;
+            this.nameBox.Location = new System.Drawing.Point(104, 123);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(567, 29);
+            this.nameBox.TabIndex = 3;
+            // 
+            // lblNotice
+            // 
+            this.lblNotice.AutoSize = true;
+            this.lblNotice.Font = new System.Drawing.Font("Ebrima", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotice.ForeColor = System.Drawing.Color.Red;
+            this.lblNotice.Location = new System.Drawing.Point(99, 182);
+            this.lblNotice.Name = "lblNotice";
+            this.lblNotice.Size = new System.Drawing.Size(331, 17);
+            this.lblNotice.TabIndex = 4;
+            this.lblNotice.Text = "*NOTE: download depends on your internet connection";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.ClientSize = new System.Drawing.Size(683, 299);
+            this.ClientSize = new System.Drawing.Size(683, 381);
             this.ControlBox = false;
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBoxDetails);
+            this.Controls.Add(this.lblNotice);
+            this.Controls.Add(this.lblAuhtor);
             this.Controls.Add(this.labelStatus);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.lblLink);
+            this.Controls.Add(this.nameBox);
+            this.Controls.Add(this.authorBox);
             this.Controls.Add(this.textBoxLink);
             this.Controls.Add(this.ico);
             this.Controls.Add(this.panelBar);
@@ -207,6 +274,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmMain";
+            this.Text = "SteamDL RW 2.1";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.panelBar.ResumeLayout(false);
             this.panelBar.PerformLayout();
@@ -229,6 +297,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelStatus;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblAuhtor;
+        private System.Windows.Forms.TextBox authorBox;
+        private System.Windows.Forms.TextBox nameBox;
+        private System.Windows.Forms.Label lblNotice;
     }
 }
 

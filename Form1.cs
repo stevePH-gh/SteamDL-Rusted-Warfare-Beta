@@ -8,6 +8,7 @@ using System.IO.Compression;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -94,6 +95,67 @@ namespace steamDLnew
                 return;
             }
 
+
+            // NEW
+
+            // ========================================================
+            // MOD NAME AND MOD AUTHOR FEATURE
+            // ========================================================
+
+            string html;
+            using (HttpClient client = new HttpClient())
+            {
+                    client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0");
+                    html = await client.GetStringAsync(link);
+            }
+
+            // MOD TITLE
+
+            Match titleMatch = Regex.Match(
+                html,
+                @"<div class=""workshopItemTitle"">(.+?)</div>",
+                RegexOptions.Singleline
+            );
+
+            string modName = titleMatch.Success
+                ? System.Net.WebUtility.HtmlDecode(titleMatch.Groups[1].Value.Trim())
+                : "Unknown Mod";
+
+            // mod AUTHOR
+            // TO DO: need to use chatgpt to retrieve mod authors
+
+            MatchCollection authorMatches = Regex.Matches(
+                html,
+                @"<div class=""friendBlockContent"">([\s\S]*?)</div>",
+                RegexOptions.IgnoreCase
+            );
+
+            List<string> authors = new List<string>();
+
+            foreach (Match m in authorMatches)
+            {
+                string block = m.Groups[1].Value;
+
+                Match nameMatch = Regex.Match(block, @"^(.*?)<br>", RegexOptions.Singleline);
+                if (nameMatch.Success)
+                {
+                    string name = System.Net.WebUtility.HtmlDecode(nameMatch.Groups[1].Value.Trim());
+                    if (!string.IsNullOrWhiteSpace(name))
+                        authors.Add(name);
+                }
+            }
+
+            string modAuthor = authors.Count > 0
+                ? string.Join(", ", authors)
+                : "Unknown Author";
+
+            nameBox.Text = modName;
+            authorBox.Text = modAuthor;
+
+
+
+            // ===== OLD =====
+
             string modId = match.Groups[1].Value;
             string appId = "647960";
 
@@ -126,7 +188,7 @@ namespace steamDLnew
                 };
 
                 string output = "";
-                string modTitle = $"Mod {modId}";
+                string modTitle = $"Mod {modId}"; // MOD ID DON'T BE CONFUSED
 
                 using (var process = new System.Diagnostics.Process { StartInfo = psi })
                 {
@@ -205,10 +267,10 @@ namespace steamDLnew
 
                 if (Directory.Exists(modFolder))
                 {
-                    string modSaveFolder = Path.Combine(steamDlRoot, modId);
+                    string modSaveFolder = Path.Combine(steamDlRoot, modId) + "_" + modName;
                     Directory.CreateDirectory(modSaveFolder);
 
-                    string zipPath = Path.Combine(modSaveFolder, $"{modId}.zip");
+                    string zipPath = Path.Combine(modSaveFolder, $"{modId}_{modName}_-_{modAuthor}.zip"); // MODIFIED // ETO UNG FILENAME
 
                     if (File.Exists(zipPath))
                         File.Delete(zipPath);

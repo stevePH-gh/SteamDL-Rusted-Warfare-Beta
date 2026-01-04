@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmChangelogsTips));
             this.panelBar = new System.Windows.Forms.Panel();
+            this.btnDownloadcmd = new System.Windows.Forms.Button();
             this.title = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnDownloadcmd = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnSeeFull = new System.Windows.Forms.Button();
             this.panelBar.SuspendLayout();
@@ -50,6 +50,18 @@
             this.panelBar.Name = "panelBar";
             this.panelBar.Size = new System.Drawing.Size(683, 57);
             this.panelBar.TabIndex = 3;
+            // 
+            // btnDownloadcmd
+            // 
+            this.btnDownloadcmd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDownloadcmd.ForeColor = System.Drawing.Color.White;
+            this.btnDownloadcmd.Location = new System.Drawing.Point(398, 3);
+            this.btnDownloadcmd.Name = "btnDownloadcmd";
+            this.btnDownloadcmd.Size = new System.Drawing.Size(187, 49);
+            this.btnDownloadcmd.TabIndex = 3;
+            this.btnDownloadcmd.Text = "Download SteamCMD";
+            this.btnDownloadcmd.UseVisualStyleBackColor = true;
+            this.btnDownloadcmd.Click += new System.EventHandler(this.btnDownloadcmd_Click);
             // 
             // title
             // 
@@ -75,18 +87,6 @@
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnDownloadcmd
-            // 
-            this.btnDownloadcmd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDownloadcmd.ForeColor = System.Drawing.Color.White;
-            this.btnDownloadcmd.Location = new System.Drawing.Point(398, 3);
-            this.btnDownloadcmd.Name = "btnDownloadcmd";
-            this.btnDownloadcmd.Size = new System.Drawing.Size(187, 49);
-            this.btnDownloadcmd.TabIndex = 3;
-            this.btnDownloadcmd.Text = "Download SteamCMD";
-            this.btnDownloadcmd.UseVisualStyleBackColor = true;
-            this.btnDownloadcmd.Click += new System.EventHandler(this.btnDownloadcmd_Click);
             // 
             // richTextBox1
             // 
@@ -114,6 +114,7 @@
             this.btnSeeFull.TabIndex = 5;
             this.btnSeeFull.Text = "See Full Changelog on GitHub";
             this.btnSeeFull.UseVisualStyleBackColor = false;
+            this.btnSeeFull.Click += new System.EventHandler(this.btnSeeFull_Click);
             // 
             // FrmChangelogsTips
             // 

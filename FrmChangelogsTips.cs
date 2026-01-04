@@ -86,5 +86,32 @@ namespace steamDLnew
         {
 
         }
+
+        private void btnSeeFull_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/stevePH-gh/SteamDl-Rusted-Warfare-Beta/tree/main#changelogs";
+            try
+            {
+                // Use this workaround for Windows 7 compatibility
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                });
+            }
+            catch
+            {
+                try
+                {
+                    // Fallback for very old systems
+                    System.Diagnostics.Process.Start("explorer.exe", url);
+                }
+                catch
+                {
+                    MessageBox.Show("Unable to open your browser.\nPlease visit:\n" + url,
+                                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
