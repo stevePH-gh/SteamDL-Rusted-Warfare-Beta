@@ -6,6 +6,13 @@ I do not plan to add more games that this downloader would support.
 **NOTES:** I have no plans to develop a mobile app version *(yet)*
 
 ## Changelogs:
+### **v2.1**
+- Added mod name UI
+- Added mod author UI _(supports multiple authors)_
+- Changed how the folder structure
+- Changed how the mod file saves
+
+  
 ### **v2.0** - Beta Update
 - Added support for older systems
 - Support for .NET 4.4 and above
@@ -32,5 +39,5 @@ Reddit: [u/steveph_yt_unreal](https://www.reddit.com/user/steveph_yt_unreal/?utm
 ![reddit qr](https://i.ibb.co/B5bnK5dt/chrome-qrcode-1762561024099.png)
 ### **Download:**
 Click this 👇👇  
-[Download Here](https://github.com/stevePH-gh/SteamDL-Rusted-Warfare-Beta/releases/tag/v2.0)  
+[Download Here](https://github.com/stevePH-gh/SteamDL-Rusted-Warfare-Beta/releases/tag/v2.1)  
 Or go to **Releases**
