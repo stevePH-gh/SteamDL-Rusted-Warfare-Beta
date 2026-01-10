@@ -5,6 +5,12 @@ I created this project only for downloading Rusted Warfare mods from **SteamWork
 I do not plan to add more games that this downloader would support.  
 **NOTES:** I have no plans to develop a mobile app version *(yet)*
 
+## Requirements:
+- Windows 10
+- Windows 11
+- .NET Framework 4.8
+- steamcmd
+
 ## Changelogs:
 ### **v2.1**
 - Added mod name UI
