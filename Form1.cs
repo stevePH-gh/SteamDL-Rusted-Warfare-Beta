@@ -48,7 +48,14 @@ namespace steamDLnew
             }
         }
 
-
+        private string CleanFileName(string input) // FIX FOR INVALID FILE NAME
+        {
+            foreach (char c in Path.GetInvalidFileNameChars())
+            {
+                input = input.Replace(c, '_');
+            }
+            return input;
+        }
         private void FrmMain_Load(object sender, EventArgs e)
         {
             SendMessage(textBoxLink.Handle, EM_SETCUEBANNER, 0, " eg: https://steamcommunity.com/sharedfiles/filedetails/?id=0123456789");
@@ -91,7 +98,7 @@ namespace steamDLnew
 
             if (!match.Success)
             {
-                MessageBox.Show("Invalid Steam Link\n\t\t\t\t", "Error");
+                MessageBox.Show("Invalid Steam Link\n\t\t\t\t", "Error 1");
                 return;
             }
 
@@ -267,11 +274,13 @@ namespace steamDLnew
 
                 if (Directory.Exists(modFolder))
                 {
-                    string modSaveFolder = Path.Combine(steamDlRoot, modId) + "_" + modName;
+                    string safeModName = CleanFileName(modName);  // FIX FOR INVALID FILE NAME
+                    string safeAuthor = CleanFileName(modAuthor);
+
+                    string modSaveFolder = Path.Combine(steamDlRoot, modId + "_" + safeModName);
+                    string zipPath = Path.Combine(modSaveFolder, $"{modId}_{safeModName}_-_{safeAuthor}.zip"); // MODIFIED // ETO UNG FILENAME
+
                     Directory.CreateDirectory(modSaveFolder);
-
-                    string zipPath = Path.Combine(modSaveFolder, $"{modId}_{modName}_-_{modAuthor}.zip"); // MODIFIED // ETO UNG FILENAME
-
                     if (File.Exists(zipPath))
                         File.Delete(zipPath);
 
@@ -287,12 +296,12 @@ namespace steamDLnew
                 }
                 else
                 {
-                    MessageBox.Show($"Ooops... Error\nMod folder not found after download.\t\t\t\t", "Download Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Ooops... Error 2\nMod folder not found after download.\t\t\t\t", "Download Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ooops... Error\n{ex.Message}\t\t\t\t", "Download Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Ooops... Error 3\n{ex.Message}\t\t\t\t", "Download Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

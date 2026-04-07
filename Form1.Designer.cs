@@ -87,7 +87,7 @@
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(279, 30);
             this.title.TabIndex = 2;
-            this.title.Text = "SteamDL Rusted Warfare 2.1";
+            this.title.Text = "SteamDL Rusted Warfare 2.2";
             // 
             // btnMin
             // 
@@ -274,7 +274,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmMain";
-            this.Text = "SteamDL RW 2.1";
+            this.Text = "SteamDL RW 2.2";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.panelBar.ResumeLayout(false);
             this.panelBar.PerformLayout();
