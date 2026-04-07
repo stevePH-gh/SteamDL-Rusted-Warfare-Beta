@@ -12,6 +12,11 @@ I do not plan to add more games that this downloader would support.
 - steamcmd
 
 ## Changelogs:
+### **v2.2**
+- Added multi encoding text support
+- Fixed invalid filename error
+
+
 ### **v2.1**
 - Added mod name UI
 - Added mod author UI _(supports multiple authors)_
