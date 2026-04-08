@@ -13,8 +13,8 @@ I do not plan to add more games that this downloader would support.
 ## For Mobile Version
 **NOTES:** I have no plans to develop a mobile app version *(yet)*  
 Here you will use what they call [Winlator](https://github.com/brunodev85/winlator)  
-Full tutorial for Winlator setup:  
-[Watch Here](https://youtu.be/Ur2yFel1XoI?si=bA9Pg5HXe9H90qF2)  
+Full tutorial for Winlator setup *(YouTube)*:  
+[![click_here](https://img.youtube.com/vi/Ur2yFel1XoI/0.jpg)](https://www.youtube.com/watch?v=Ur2yFel1XoI)
 
 ## Changelogs:
 ### **v2.2**
