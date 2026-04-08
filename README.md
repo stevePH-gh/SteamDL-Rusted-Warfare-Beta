@@ -20,6 +20,7 @@ Full tutorial for Winlator setup *(YouTube)*:
 ### **v2.2**
 - Added multi encoding text support
 - Fixed invalid filename error
+- Added support for non UTF-8 encoding *(Symbols, Russian, Thai, Korean Characters, etc)*
 
 
 ### **v2.1**
