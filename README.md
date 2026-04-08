@@ -3,13 +3,18 @@
 ## A portable mod downloader
 I created this project only for downloading Rusted Warfare mods from **SteamWorkshop**.  
 I do not plan to add more games that this downloader would support.  
-**NOTES:** I have no plans to develop a mobile app version *(yet)*
 
 ## Requirements:
 - Windows 10
 - Windows 11
 - .NET Framework 4.8
 - steamcmd
+
+## For Mobile Version
+**NOTES:** I have no plans to develop a mobile app version *(yet)*  
+Here you will use what they call [Winlator](https://github.com/brunodev85/winlator)  
+Full tutorial for Winlator setup:  
+[Watch Here](https://youtu.be/Ur2yFel1XoI?si=bA9Pg5HXe9H90qF2)  
 
 ## Changelogs:
 ### **v2.2**
