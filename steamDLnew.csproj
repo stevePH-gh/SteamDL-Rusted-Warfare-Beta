@@ -7,7 +7,7 @@
     <ProjectGuid>{E56B2B00-D503-4AE1-9BF1-D410EEE01C1A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>steamDLnew</RootNamespace>
-    <AssemblyName>steamDLnew</AssemblyName>
+    <AssemblyName>steamDL2.0</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

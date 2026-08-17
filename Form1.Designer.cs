@@ -87,7 +87,7 @@
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(279, 30);
             this.title.TabIndex = 2;
-            this.title.Text = "SteamDL Rusted Warfare 2.2";
+            this.title.Text = "SteamDL Rusted Warfare 2.3";
             // 
             // btnMin
             // 
