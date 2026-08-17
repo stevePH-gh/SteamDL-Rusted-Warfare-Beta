@@ -17,6 +17,11 @@ Full tutorial for Winlator setup *(YouTube)*:
 [![click_here](https://img.youtube.com/vi/Ur2yFel1XoI/0.jpg)](https://www.youtube.com/watch?v=Ur2yFel1XoI)
 
 ## Changelogs:
+### **v2.3**
+- Fixed blurred window
+- Fixed loading bar sometimes overlapping
+
+
 ### **v2.2**
 - Added multi encoding text support
 - Fixed invalid filename error
